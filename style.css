@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* main div */
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;    
+}
+
+
+/* navbar start */
+nav{
+    display: flex;
+    justify-content: space-between;    /*horizontal spacing*/
+    align-items: center;               /*vertical spacing*/
+    margin-left: 5px;
+}
+
+.logo{
+    width: 300px;
+}
+
+.list-items{
+    list-style: none;  /*remove bullets*/
+    display: inline;   /*arrange items in 1 row  .ie,convert block elements into inline elements*/ 
+    margin: 0 30px; /*give space between list items*/
+}
+
+.list{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* pseudo class */
+
+.list:hover{                  /*in list we define only 3 property, so we can change only 3 property by using pseudo class*/
+    color: blue;
+    text-decoration: underline;
+}
+
+/* navbar end */
+
+/* home */
+
+/* home content */
+
+.home-content{
+    margin: 250px 0px 0px 120px;
+}
+
+#username{
+    font-size: 30px;
+    font-family: "Playwrite CU", cursive;
+    margin-bottom: 30px;
+}
+#lname{
+    font-family: "Playwrite CU", cursive;
+    color: orange;
+}
+
+#user-details{
+    line-height: 1.5;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;   /*to get correct arrangement of btn.to avoid overlap between p contents.*/
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* home image */
+
+.home-img{
+    width: 300px;
+    height: 400px;
+    position: absolute;   /*to get image in the side*/
+    bottom: 0px;  /*to correct the alignment*/
+    right: 250px;
+}
+.group1{
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    transform: translateX(-200px);
+}
+
+.home-img:hover #shape{
+    bottom: 70px;  /*to move shape*/
+
+}
+.home-img:hover #girl{
+    left: 150px;     /*to move girl*/
+}
+
+/*******************about ************** */
+#about{
+    margin: 250px 120px 0px 120px;
+}
+.sectionHead{
+    text-align: center;
+}
+#mainHead{
+    font-size: 30px;
+}
+#subHead{
+    font-size: 20px;
+    color: green;
+}
+.aboutBody{
+    margin-top: 30px;
+    display: grid;                /*use instead of flex*/         
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;                          /*to give gap between contents*/
+    align-items: center;
+}
+.img1{
+    width: 100%;
+}
+
+.aboutContent{
+    font-size: 18px;
+    text-align: justify;
+
+}
+.information{
+    margin-top: 1.5rem;  /*with respect to root elment*/
+}
+.infobox{
+    margin-bottom: 10px;
+}
+.infobox>span{            
+    margin-left: 1rem;
+}
+
+
+
+/**********skills******/
+
+#skill{
+    margin: 150px 150px 0px 150px;
+}
+
+.skillcontent{
+    display: grid;                    /*to get contents in two side*/
+    grid-template-columns: repeat(2, 1fr);    /*get 2 columns*/
+    align-items: center;
+    gap: 5rem;            /*to give gap between image and content*/
+    margin-top: 20px;
+
+}
+/*  */
+.bars{
+    display: flex;
+    justify-content: space-between ; /*vertical arrangement*/
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+
+}
+
+.mainHead, .barPercentage{
+    font-weight: 500px;
+    font-size: 1.3rem;
+}
+
+
+.baseBar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;     /*to get bar in below of text*/
+}
+
+/* give bar design */
+.htmlBar{
+    
+    background-color: orange;
+    width: 89%;
+}
+
+.cssBar{
+    background-color: orange;
+    width: 82%;
+}
+.jsBar{
+    background-color: orange;
+    width: 86%;
+}
+.reactBar{
+    background-color: orange;
+    width: 89%;
+}
+
+/*********************** contact ******************/
+
+#contact{
+    margin: 150px 150px 0px 150px;
+}
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+   /*to give style for icons*/
+.brands{                        
+    color: black;
+    font-size: 1.8rem;
+}
+
+
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right,gray,black);
+}
+.brands:hover{
+    color: white;
+
+    /* animation */
+    animation: rotate 3s;
+}
+
+/* animation effects */
+
+@keyframes rotate{
+    0%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+
+}
+
+/************ footer***************** */
+
+footer{
+    margin-top: 150px;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 600;
+}
+.upArrow{
+    float: right;   /*to move one item to right*/
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+
+/* scroll bar */
+html{
+    scroll-behavior: smooth;
+}
+
+/* to access scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+}
+

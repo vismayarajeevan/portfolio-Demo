@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIOt</title>
+
+    <!-- css file -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- font awesom -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&family=Sevillana&family=Playwrite+CU:wght@100..400" &display=swap" rel="stylesheet">
+
+
+     <!-- animation  -> animate.style   -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+     <!-- animation at scroll time -> aos animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <!-- pseudo class to create a special states -->
+</head>
+
+
+<body>
+
+    <!-- main div -->
+    <div id="container">
+
+        <!-- navbar -->
+         <nav>
+            <!-- logo -->
+             <img class="logo" src="images/logo3.png" alt="no image">
+
+             <!-- links -->
+              <ul>
+                <li class="list-items"><a class="list" href="#home">Home</a></li>
+                <li class="list-items"><a class="list" href="#about">About</a></li>
+                <li class="list-items"><a class="list" href="#skill">Skills</a></li>
+                <li class="list-items"><a class="list" href="#contact">Contact</a></li>
+              </ul>
+         </nav>
+
+
+        <!-- home -->
+         <section id="home">
+
+            <!-- home-details section -->
+            <div class="home-content">
+                <h1 class="animate__animated animate__fadeInDownBig" id="username">I'm Vismaya <span id="lname">Rajeevan</span></h1>
+                <p id="user-details">This is my official portfolio website to describe all 
+                <br>
+                Details and work experience in Web Development</p>
+
+                <a href="images/RESUME new.pdf" id="download" download="">DOWNLOAD CV</a>
+                
+            </div>
+
+            <!--home-image section  -->
+
+            <div class="home-img">
+
+                <!-- shape -->
+                 <img  src="images/index img2.png" id="shape" class="group1" alt="">
+
+                 <!-- girl -->
+                 <img src="images/index img1.png" id="girl" class="group1" alt="">
+            </div>
+         </section>
+
+
+
+        <!-- ***********about************************** -->
+
+        <section id="about">
+            <!-- heading -->
+            <div class="sectionHead">
+                <h2 id="mainHead">About Me</h2>
+                <span id="subHead">Introduction</span> 
+            </div>
+
+            <!-- image and content -->
+            <div class="aboutBody">
+                <div class="aboutImage" data-aos="fade-right">
+                    <img src="images/aboutme.jpg" class="img1" alt="">
+                </div>
+                <div class="aboutContent" data-aos="fade-left">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae impedit in ipsum reiciendis assumenda blanditiis atque repellendus velit, sapiente enim, exercitationem sint deserunt architecto reprehenderit alias laborum ipsa ea.lorem
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis aliquam, minima voluptatem ad eligendi minus ratione, cumque blanditiis iure suscipit. 
+                    </p>
+
+                    <!-- details -->
+                    <div class="information">
+                        <div class="infobox">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Vismaya Rajeevan</span>
+                        </div>
+
+                        
+                            <div class="infobox">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>5412418745</span>
+                            </div>
+
+                            
+                                <div class="infobox">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>vismay123@gmail.com</span>
+                                </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ************skills******************** -->
+
+        <section id="skill">
+            <!-- heading section -->
+            <div class="sectionHead">
+                <h2 id="mainHead">Skills</h2>
+                <span id="subHead">My Skills</span> 
+            </div>
+
+            <!-- content section -->
+            <div class="skillcontent">
+
+                <div class="progressbar">
+                    <!-- progress bars -->
+                     <div class="bars">
+                        
+                            <h3 class="mainHead">HTML</h3>
+                            <span class="barPercentage">89%</span>
+                            <!-- bars -->
+                             <div  class="baseBar"></div>
+                             <div data-aos="fade-right" class="baseBar htmlBar"></div>
+                        
+                     </div>
+
+                     <div class="bars">
+                       
+                            <h3 class="mainHead">CSS</h3>
+                            <span class="barPercentage">82%</span>
+                            <!-- bars -->
+                             <div class="baseBar"></div>
+                             <div data-aos="fade-right" class="baseBar cssBar"></div>
+                        
+                     </div>
+
+                     <div class="bars">
+                        
+                            <h3 class="mainHead">JS</h3>
+                            <span class="barPercentage">86%</span>
+                            <!-- bars -->
+                             <div  class="baseBar"></div>
+                             <div data-aos="fade-right" class="baseBar jsBar"></div>
+                        
+                     </div>
+
+                     <div class="bars">
+                       
+                            <h3 class="mainHead">REACT</h3>
+                            <span class="barPercentage">89%</span>
+                            <!-- bars -->
+                             <div  class="baseBar"></div>
+                             <div data-aos="fade-right" class="baseBar reactBar"></div>
+                        
+                     </div>
+
+                </div>
+
+                <!-- skill image -->
+                <div class="skillimage" data-aos="fade-left">
+                    <img src="images/skill.png" class="myskill" alt="no image">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ******contact*********** -->
+
+         <section id="contact">
+
+            <!-- heading section -->
+            <div class="sectionHead">
+                <h2 id="mainHead">Contacts</h2>
+                <span id="subHead">My Contacts</span> 
+            </div>
+
+            <!-- icons -->
+
+            <div class="iconCollection">
+                <!-- linkedin -->
+                 <div class="icon">
+                    <a href="https://in.linkedin.com/in/vismaya-rajeevan-1060842b6" target="_blank"><i class="fa-brands fa-linkedin-in brands"></i> </a>
+                 </div>
+                <!-- github -->
+                 <div class="icon">
+                   <a href="" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+                 </div>
+                 <!-- twitter -->
+                 <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+                  </div>
+                  <!-- facebook -->
+                  <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook brands"></i></a>
+                  </div>
+                   <!-- instagram -->
+                   <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+                  </div>
+                    <!-- email -->
+                    <div class="icon">
+                        <a href="" target="_blank"><i class="fa-solid fa-envelope brands"></i></a>
+                      </div>
+
+
+
+            </div>
+
+         </section>
+
+        <!-- footer -->
+
+        <footer>
+            <p id="copyright">&copy; My portfolio website -June 2024, All RightsReserved to &reg; Vismaya Rajeevan</p>
+
+            <!-- arrow icon -->
+
+            <div class="icon upArrow">
+                <a href="#container"><i class="fa-solid fa-angle-up brands"></i></a>
+              </div>
+        </footer>
+
+    </div>
+
+    
+</body>
+
+<!-- aos js link -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>
